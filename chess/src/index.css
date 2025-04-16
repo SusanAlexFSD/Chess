@@ -13,8 +13,9 @@ body {
   width: 480px;
   height: 480px;
   border: 4px solid #fff;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 15px rgba(18, 97, 35, 0.3);
 }
+
 
 /* Board square styling */
 .square {
@@ -29,12 +30,12 @@ body {
 
 /* Light squares */
 .square.light {
-  background-color: #f3f4f6; /* Tailwind gray-100 */
+  background-color: #7be9da; /* Tailwind gray-100 */
 }
 
 /* Dark squares */
 .square.dark {
-  background-color: #065f46; /* Tailwind green-700 */
+  background-color: #000000; /* Tailwind green-700 */
   color: white;
 }
 
@@ -45,9 +46,20 @@ body {
 
 /* Turn text */
 .turn-indicator {
-  color: white;
+  color: rgb(226, 157, 66);
   font-size: 1.25rem;
   margin-bottom: 1rem;
   font-weight: bold;
 }
+
+.white-piece {
+  color: green;
+  font-size: 2.5rem;
+}
+
+.black-piece {
+  color: hotpink;
+  font-size: 2.5rem;
+}
+
 
