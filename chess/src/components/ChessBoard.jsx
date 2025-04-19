@@ -93,8 +93,7 @@ const isValidMove = (piece, startRow, startCol, endRow, endCol, isWhite, board) 
   switch (piece) {
     case "♙": case "♟": {
       const dir = isWhite ? -1 : 1;
-      const startRow = isWhite ? 6 : 1;
-
+      
       // Normal move
       if (dc === 0 && dr === dir && !targetPiece) return true;
 
