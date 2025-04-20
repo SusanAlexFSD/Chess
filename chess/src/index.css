@@ -19,6 +19,8 @@ body {
 
 /* Board square styling */
 .square {
+  width: 60px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -77,3 +79,9 @@ body {
   background-color: rgba(0, 255, 0, 0.3); /* light green overlay */
 }
 
+.piece-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  pointer-events: none;
+}

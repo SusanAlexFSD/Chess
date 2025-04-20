@@ -1,7 +1,24 @@
 import React, { useState, useEffect } from "react";
 import "../index.css";
 
+const getPieceImage = (piece) => {
+  const pieceMap = {
+    "♔": "whiteking.png",
+    "♕": "whitequeen.png",
+    "♖": "whiterook.png",
+    "♗": "whitebishop.png",
+    "♘": "whiteknight.png",
+    "♙": "whitepawn.png",
+    "♚": "blackking.png",
+    "♛": "blackqueen.png",
+    "♜": "blackrook.png",
+    "♝": "blackbishop.png",
+    "♞": "blackknight.png",
+    "♟": "blackpawn.png",
+  };
 
+  return pieceMap[piece] ? `/images/${pieceMap[piece]}` : null;
+};
 
 const initialBoard = () => {
   const emptyRow = Array(8).fill(null);
@@ -410,9 +427,12 @@ const ChessBoard = () => {
                   onClick={() => handleSquareClick(i, j)}
                 >
                   {piece && (
-                    <span className={isWhitePiece(piece) ? "white-piece" : "black-piece"}>
-                      {piece}
-                    </span>
+                    <img
+                    src={getPieceImage(piece)}
+                    alt={piece}
+                    className="piece-image"
+                  />
+                  
                   )}
                 </div>
               );
