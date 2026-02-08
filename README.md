@@ -76,6 +76,7 @@ Play Against Computer
 
     Make your move — the computer responds with a basic legal move
 
+# Future Imporvements
 
 🚀 Future Improvements
 
