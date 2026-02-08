@@ -77,6 +77,19 @@ Play Against Computer
     Make your move — the computer responds with a basic legal move
 
 
+🚀 Future Improvements
+
+    Stronger AI (minimax, alpha‑beta pruning)
+
+    Move history
+
+    Undo/redo
+
+    Online multiplayer
+
+    Themes (dark mode, wood textures)
+
+
 
     ## 📸 Screenshots
 
